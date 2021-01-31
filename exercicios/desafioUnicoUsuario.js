@@ -7,7 +7,7 @@ bot.start(ctx => {
 
     let msgId = ctx.update.message.from.id
 
-    if (msgId == env.userId){
+    if (msgId === env.userId){
         ctx.reply('Ao seu dispor mestre!')
     } else {
         ctx.reply('sinto muito, mas eu só falo com o meu mestre!')
